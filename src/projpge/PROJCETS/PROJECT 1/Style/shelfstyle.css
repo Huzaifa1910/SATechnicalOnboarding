@@ -1,0 +1,284 @@
+/* html {
+  height: 100%;
+}
+
+body {
+  background-color: #AAACB5;
+} */
+
+.catshelf {
+  /* width: 80%;
+  height: 100%;
+  margin: 0px auto; */
+  border: 10px #A87328 solid;
+  /* overflow: hidden; */
+  background-image: linear-gradient(#241909, #2c1e0b 220px, #b87e2c 220px, #b87e2c 222px, #A87328 222px, #A87328 228px, #986824 228px, #986824 230px);
+  /* background-size: 10px 230px;
+  box-shadow: 31px 27px 15px -27px #7A7668; */
+  /* box-shadow: 0px 0px 0px 400px #7A7668; */
+}
+.forbookshelf{
+  width: 80%;
+  height: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  background-size: 10px 230px;
+  box-shadow: 31px 27px 15px -27px #7A7668;
+}
+.bookshelf1 {
+/* display: none; */
+  /* width: 80%;
+  height: 100%;
+  margin: 0px auto; */
+  border: 10px #8428a8 solid;
+  /* overflow: hidden; */
+  background-image: linear-gradient(#230924, #2b0b2c 220px, #a82cb8 220px, #b82cac 222px, #8428a8 222px, #8428a8 228px, #7d2498 228px, #812498 230px);
+  /* background-size: 10px 230px;
+  box-shadow: 31px 27px 15px -27px #7A7668; */
+  /* box-shadow: 0px 0px 0px 400px #7A7668; */
+}
+.bookshelf2 {
+/* display: none; */
+  /* width: 80%;
+  height: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  background-size: 10px 230px;
+  box-shadow: 31px 27px 15px -27px #7A7668; */
+  /* box-shadow: 0px 0px 0px 400px #7A7668; */
+  border: 10px #a82828 solid;
+  background-image: linear-gradient(#240909, #2c0b0b 220px, #b82c2c 220px, #b82c2c 222px, #a82828 222px, #a82828 228px, #982424 228px, #982424 230px);
+}
+.bookshelf3 {
+/* display: none; */
+border: 10px #494949 solid;
+background-image: linear-gradient(#1d1c1c, #1b1b1b 220px, #5c5c5c 220px, #5c5c5c 222px, #494949 222px, #494949 228px, #585858 228px,#585858  230px);
+  /* width: 80%;
+  height: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  background-size: 10px 230px;
+  box-shadow: 31px 27px 15px -27px #7A7668; */
+  /* box-shadow: 0px 0px 0px 400px #7A7668; */
+}
+.bookshelf4 {
+/* display: none; */
+border: 10px #96930c solid;
+background-image: linear-gradient(#49430f, #5b5c16 220px, #8d8f35 220px, #8d8f35 222px, #96930c 222px, #96930c 228px, #50460f 228px, #50460f 230px);
+  /* width: 80%;
+  height: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  background-size: 10px 230px;
+  box-shadow: 31px 27px 15px -27px #7A7668; */
+  /* box-shadow: 0px 0px 0px 400px #7A7668; */
+}
+.bookshelf5 {
+/* display: none; */
+  /* width: 80%;
+  height: 100%;
+  margin: 0px auto; */
+  border: 10px #077f88 solid;
+  background-image: linear-gradient(#0e383d, #102131 220px, #075a9e 220px, #075a9e 222px, #077f88 222px, #077f88 228px, #36737e 228px, #36737e 230px);
+  /* overflow: hidden;
+  background-size: 10px 230px;
+  box-shadow: 31px 27px 15px -27px #7A7668; */
+  /* box-shadow: 0px 0px 0px 400px #7A7668; */
+}
+
+.book {
+  margin-right: 2px;
+  cursor: pointer;
+  height: 200px;
+  width: 40px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  transition: transform 0.4s ease;
+}
+
+.book-tilted {
+  float: left;
+  width: 74px;
+}
+
+.book-tilted > .book {
+  transform: translateY(-3px) translateX(15px) rotate(9deg);
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book-green {
+  background-color: darkgreen;
+  border-left: 2px solid #007800;
+  border-right: 2px solid #005000;
+  border-radius: 3px;
+
+}
+
+.book-blue {
+  background-color: #0C347D;
+  border-left: 2px solid #0e3c90;
+  border-right: 2px solid #0a2c6a;
+  border-radius: 3px;
+
+}
+
+.book-umber {
+  background-color: #54290C;
+  border-left: 2px solid #66320f;
+  border-right: 2px solid #422009;
+  border-radius: 3px;
+
+}
+
+.book-springer {
+  background-color: #EDED80;
+  border-left: 2px solid #f0f092;
+  border-right: 2px solid #eaea6e;
+  color: black;
+  border-radius: 3px;
+
+}
+.book-cat-1{
+  background-color: #8428a8;
+  border-left: 2px solid #a451bd;
+  border-right: 2px solid #401c47;
+  color: white;
+  border-radius: 3px;
+}
+.book-cat{
+  background-color: #a82828;
+  border-left: 2px solid #bd5151;
+  border-right: 2px solid #471c1c;
+  color: white;
+  border-radius: 3px;
+}
+.book-cat-3{
+  background-color: #494949;
+  border-left: 2px solid #686868;
+  border-right: 2px solid #525252;
+  color: white;
+  border-radius: 3px;
+}
+.book-cat-4{
+  background-color: #96930c;
+  border-left: 2px solid #b2bd51;
+  border-right: 2px solid #47461c;
+  color: white;
+  border-radius: 3px;
+}
+.book-cat-5{
+  background-color: #077f88;
+  border-left: 2px solid #51a7bd;
+  border-right: 2px solid #1c3d47;
+  color: white;
+  border-radius: 3px;
+}
+
+.book h2 {
+  margin-top: 10px;
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+}
+
+.book h3 {
+  margin-top: 10px;
+  padding: 0;
+  font-size: 0.7em;
+  transform-origin: 0 0;
+  transform: rotate(0.25turn) translateY(-15px) translateX(-20px);
+  width: 150px;
+}
+.cate-head{
+  box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 32%) inset;
+  
+  width: 80.8%;
+  border: 5px #A87328 ridge;
+  background-color: #A87328;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  size: 2.5em;
+  text-transform: capitalize;
+}
+.backshelf{
+  color: white;
+  float: left;
+  width: 0;
+  cursor: pointer;
+}
+.bookhead{
+  box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 32%) inset;
+  
+  width: 80.8%;
+
+  color:rgb(255, 255, 255);
+  text-align: center;
+  size: 2.5em;
+  text-transform: capitalize;
+}
+.bookheadcolor1{
+  border: 5px #8428a8 ridge;
+  background-color: #8428a8;
+}
+.bookheadcolor2{
+  border: 5px #a82828 ridge;
+  background-color: #a82828;
+}
+.bookheadcolor3{
+  border: 5px #494949 ridge;
+  background-color: #494949;
+}
+.bookheadcolor4{
+  border: 5px #96930c ridge;
+  background-color: #96930c;
+}
+.bookheadcolor5{
+  border: 5px #077f88 ridge;
+  background-color: #077f88;
+}
+#bookshelf1{
+  display: none;
+}
+#bookshelf2{
+  display: none;
+}
+#bookshelf3{
+  display: none;
+}
+#bookshelf4{
+  display: none;
+}
+#bookshelf5{
+  display: none;
+}
+#bookshelf6{
+  display: none;
+}
+#bookshelf7{
+  display: none;
+}
+#bookshelf8{
+  display: none;
+}
+#bookshelf9{
+  display: none;
+}
+#bookshelf10{
+  display: none;
+}
+#bookshelf11{
+  display: none;
+}
+/* Where N is continue integer of function e.g 12,13,14...... */
+/* #bookshelN{
+  display: none;
+} */

@@ -4,96 +4,485 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-
+    <title>Portfolio</title>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script> 
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCop0Vtt6hd6NsbOB1Pn-4PXWFa0m7UPKc",
+        authDomain: "huzaifaghoriport.firebaseapp.com",
+        projectId: "huzaifaghoriport",
+        storageBucket: "huzaifaghoriport.appspot.com",
+        messagingSenderId: "191940882584",
+        appId: "1:191940882584:web:9d6aa68a58c680ea8d60ed"
+};
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <main>
-        <article class="box">
-            <h1>Muhammad Huzaifa Ghori</h1>
-            <div><a href="mailto:huzaifaghori000@gmail.com">huzaifaghori000@gmail.com</a></div>
-            
-            <section class="box">
-                <h2>
-                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                    Social media
-                </h2>
-                <ul>
-                    <li><a href="https://github.com/Huzaifa1910">@github</a></li>
-                    <li><a href="https://linkedin.com/in/huzaifa-ghori-2087771b3/">@linkedin</a></li>
-                    <li><a href="https://twitter.com/HuzaifaGhori19">@twitter</a></li>
-                </ul>    
-            </section>
-            
-            <section class="box">
-                <div class="education">
-                    <h2>
-                        <i class="fa fa-certificate" aria-hidden="true"></i>
-                        University of Karachi
-                    </h2>
-                    <h3>Computer Science</h3>
-                    <ul>
-                        <!-- <li>GPA: 4.0</li> -->
-                        <!-- <li>Years</li> -->
-                    </ul>
-                </div>
-            </section>
+    <!--======================================================Navbar=============================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bgclr">
+        <a class="navbar-brand" href="./index.html">Ghori's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav marg mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./proj.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Latest Projects</a>
+                <a class="dropdown-item" href="#">About me</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Contact me</a>
+                <a class="dropdown-item" href="./cv.html" target=" _blank">Download CV</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Here" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
-            <section class="box">
-                <h2>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    Skills
-                </h2>
-                <ul>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
-                    <li>Visual Studio Code</li>
-                </ul>
-            </section>
-        </article>
-        <article class="box">
-            <section class="box">
-                <h2>
-                    <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    Experience
-                </h2>
-                <h3>Microsoft Learn Student Ambassador</h3>
-                <ul>
-                    <li>Some skill</li>
-                    <li>Another skill</li>
-                </ul>
-            </section>
-            <section class="box">
-                <h2>
-                    <i class="fa fa-building" aria-hidden="true"></i>
-                    Internships
-                </h2>
+ <!--======================================================Navbar End=============================================================== -->
+ <!-- ===========================================================CONTENT======================================= -->
 
-                <h3>Company name</h3>
-                <ul>
-                    <li>Accomplishment</li>
-                    <li>Another accomplishment</li>
-                </ul>
-            </section>
-            <section class="box">
-                <h2>
-                    <i class="fa fa-cubes" aria-hidden="true"></i>
-                    Projects
-                </h2>
-                
-                <h3>Great hackathon</h3>
-                <div>This was a great hack!</div>
-                <ul>
-                    <li>Cool technology used</li>
-                    <li>Prize won</li>
-                </ul>
-            </section>
-        </article>
-    
-    </main>
+<div class="container shad">
+    <div class="forgif"><img src="./Comp/ColorlessBitesizedKob-max-1mb.gif" class="gif1" alt="Gif IMage"></div>
+    <div class="headpera">
+        <span>Hello there, my name is Huzaifa Ghori, and this is my portfolio web, interesting? Need one for yourself?<br> </span>
+        <p class="sp2">Explore some designs by clicking on below buttons.</p>
+        <div class="perabtns">
+            <button class="btn1" type="button">EXPLORE</button>
+            <button class="btn2" type="button"  data-toggle="modal" data-target="#exampleModalLong">TRY IT NOW</button>
+        </div>
+    </div>
+</div>
+<hr>
+<!-- =========================MDOAL FORM===================== -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">CV Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body" id="cvform">
+        <fieldset id="cvv">
+          <h2 class="headttl forfont">My Resume</h2>
+          <div class="container basecont">
+            <!-- <div class="col-md-12"> -->
+              <div class="sidedbar" >
+                <input type="file" id="cvimg" accept="image/png, image/jpg">
+                <div class="resimgmoc" id="dispimg">
+    </div>
+    <br><br>
+    <hr class="gaped">
+    <h3 class="sidedhead forfont">Info</h3>
+    <ul class="listed  forfont">
+      <li><input type="text" placeholder="Name..." id="text1" class="cvinp forfont"></li>
+      <li><input type="text" placeholder="Age..." id="text2" class="cvinp forfont"></li>
+      <li><input type="text" placeholder="Phone No..." id="text3" class="cvinp forfont"></li>
+      <li><input type="text" placeholder="Email..." id="text4" class="cvinp forfont"></li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead forfont">Skills</h3>
+    <p class="forfont">I have strong command on the following:</p>
+    <ul class="listed forfont" >
+        <li><input type="text" placeholder="Type Here..." id="text5" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text6" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text7" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text8" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text9" class="cvinp forfont"></li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead forfont">Hobbies</h3>
+    <ul class="listed forfont" >
+        <li><input type="text" placeholder="Type Here..." id="text10" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text11" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text12" class="cvinp forfont"></li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead forfont">Interests</h3>
+    <ul class="listed forfont" >
+        <li><input type="text" placeholder="Type Here..." id="text13" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text14" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text15" class="cvinp forfont"></li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead forfont">Courses</h3>
+    <ul class="listed forfont" >
+        <li><input type="text" placeholder="Type Here..." id="text16" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text17" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text18" class="cvinp forfont"></li>
+    </ul>
+    <hr class="gaped">
+</div>
+<div class="sidedbar2">
+    <h3 class="sidedhead2 forfont">Objective</h3>
+    <ul class="listed forfont" >
+        <li><input type="text" placeholder="Type Here..." id="text19" class="cvinp forfont"></li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead2 forfont">Experience</h3>
+    <ul class="listed forfont" >
+        <li><input type="text" placeholder="Type Here..." id="text20" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text21" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text22" class="cvinp forfont"></li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead2 forfont">Education</h3>
+    <ul class="listed forfont" >
+        <li><input type="text" placeholder="Type Here..." id="text23" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text24" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text25" class="cvinp forfont"></li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead2 forfont">Personal Information</h3>
+    <ul class="listed forfont" >
+        <li><input type="text" placeholder="Date of Birth" id="text26" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Religion" id="text27" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Nationality" id="text28" class="cvinp forfont"></li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead2 forfont">Skills & Abilities</h3>
+    <ul>
+      <li><h3 class="forfont">  &nbsp; &nbsp;Type in detail here</h3></li></ul>
+      <ul class="listed forfont" >
+        <li><input type="text" placeholder="Type Here..." id="text29" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text30" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text31" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text32" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text33" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text34" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text35" class="cvinp forfont"></li>
+        <li><input type="text" placeholder="Type Here..." id="text36" class="cvinp forfont"></li>
+      </ul>
+      <hr class="gaped">
+      <h3 class="sidedhead2 forfont">Core Competencies</h3>
+      <ul class="listed forfont" >
+          <li><input type="text" placeholder="Type Here..." id="text37" class="cvinp forfont"></li>
+          <li><input type="text" placeholder="Type Here..." id="text38" class="cvinp forfont"></li>
+          <li><input type="text" placeholder="Type Here..." id="text39" class="cvinp forfont"></li>
+      </ul>
+      <hr class="gaped">
+      <h3 class="sidedhead2 forfont">S.W.O.T</h3>
+      <ul class="listed forfont" >
+          <li><input type="text" placeholder="Type Here..." id="text40" class="cvinp forfont"></li>
+          <li><input type="text" placeholder="Type Here..." id="text41" class="cvinp forfont"></li>
+          <li><input type="text" placeholder="Type Here..." id="text42" class="cvinp forfont"></li>
+          <li><input type="text" placeholder="Type Here..." id="text43" class="cvinp forfont"></li>
+      </ul>
+</div>
+</div>
+<!-- <hr class="gaped"> -->
+
+
+
+<!-- <form>
+  <legend>For sections</legend>
+  
+  <label>How many sections you want in sidebar?</label>
+  <input type="number" id="barid" placeholder="Select">
+  <label>How many points you want in each heading?</label>
+          <input type="number" id="baredid" placeholder="Select">
+            
+          <label>How many sections you want in description?</label>
+          <input type="number" id="mainid" placeholder="Select">
+          <label>How many options you want in each heading?</label>
+          <input type="number" id="mainedid" placeholder="Select">
+          <button type="button" class="btn btn-success" onclick="addform()">Enter</button>
+        </form> -->
+        <!-- <hr class="gaped">
+        <h2 class="headttl">For Sidebar</h2>
+        <form>
+          <input type="text" class="headinp" id="headside1" placeholder="Heading">
+          <form>
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+          </form>
+      </form>
+        <hr class="gaped">
+        <form>
+          <input type="text" class="headinp" id="headside2" placeholder="Heading">
+          <form>
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+          </form>
+      </form>
+        <hr class="gaped">
+        <form>
+          <input type="text" class="headinp" id="headside3" placeholder="Heading">
+          <form>
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+            <input type="text" class="headinp" placeholder="Type Content">
+          </form>
+      </form>
+        <hr class="gaped">
+        <h2 class="headttl">For Main</h2>
+        <form>
+          <input type="text" class="headm" id="headmain1" placeholder="Heading">
+          <form>
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+          </form>
+      </form>
+        <hr class="gaped">
+        <form>
+          <input type="text" class="headm" id="headmain2" placeholder="Heading">
+          <form>
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+          </form>
+      </form>
+        <hr class="gaped">
+        <form>
+          <input type="text" class="headm" id="headmain3" placeholder="Heading">
+          <form>
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+            <input type="text" class="headm" placeholder="Type Content">
+          </form>
+      </form> -->
+    </fieldset>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="addhead()">Finish</button>
+        <button type="button" class="btn btn-success" id="slick" >Generate</button>
+        
+        <!-- <button type="button" class="btn btn-success" onclick="tocheck()">Generate</button> -->
+      </div>
+      <div class="idgen">
+        <h1>Your CV id is: <br><span id="idcv"></span></h1>
+        <button type="button" class="btn btn-danger copybtn" id="copyBtn">Copy</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- =========================MDOAL FORM===================== -->
+
+
+<!-- =========================MDOAL FORM===================== -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content" id="copcv">
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- =========================MDOAL FORM===================== -->
+
+
+<h2 class="headttl">My Resume</h2>
+<div class="container basecont no-gutters lambai" style="height: 900px;"> 
+    <!-- <div class="col-md-12"> -->
+    <div class="sidedbar" style="height: 900px;" >
+    <div class="resimg">
+      <img src="./Comp/WhatsApp Image 2022-08-26 at 11.37.07 PM.jpeg" alt="">
+    </div>
+    <br><br>
+    <hr class="gaped">
+    <h3 class="sidedhead">Info</h3>
+    <ul class="listed" >
+      <li>Name: Muhammad Huzaifa Ghori</li>
+      <li>Age: 22</li>
+      <li>Ph No: 03042490922</li>
+      <li>Email: huzaifaghori000@gmail.com</li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead">Skills</h3>
+    <p>I have strong command on the following:</p>
+    <ul class="listed" >
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>Javascript</li>
+        <li>Python</li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead">Hobbies</h3>
+    <ul class="listed" >
+        <li>Video Games</li>
+        <li>Coding</li>
+        <li>Watch Movies</li>
+    </ul>
+    <!-- <hr class="gaped">
+    <h3 class="sidedhead">Interests</h3>
+    <ul class="listed" >
+        <li></li>
+        <li>Learning About Different Technologies</li>
+        <li>Major Interest in Machines</li>
+    </ul> -->
+    <hr class="gaped">
+    <h3 class="sidedhead">Courses</h3>
+    <ul class="listed" >
+        <li>Front-End Developement</li>
+        <li>Python Programming</li>
+        <p>all courses done from Jawan Pakistan</p>
+    </ul>
+    <hr class="gaped">
+</div>
+<div class="sidedbar2" style="height: 900px;">
+    <h3 class="sidedhead2">Objective</h3>
+    <ul class="listed" >
+        <li>"To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills."</li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead2">Experience</h3>
+    <ul class="listed" >
+        <li>I have completed Several Projects of clients in my local Circle, You can check <a href="./proj.html" class="anchored">Projects</a> in my projects section</li>
+        <li>Also completed challenges on <a href="frontendmentor.io" class="anchored">frontendmentor.io</a> to for practice and portfolio, you can visit my solutions on <a href="https://www.frontendmentor.io/profile/Huzaifa1910" class="anchored">Solutions</a>.</li>
+        <li>Further More you can visit my github to check all my latest activities <a href="https://github.com/Huzaifa1910" class="anchored">Github</a></li>
+        <li>You can visit my following profiles as well:
+          <ul>
+            <li><a href="https://github.com/Huzaifa1910" class="anchored" target="_blank">Github</a> ||
+               <a href="https://twitter.com/HuzaifaGhori19" class="anchored" target="_blank">Twitter</a> ||
+               <a href="https://www.linkedin.com/in/huzaifa-ghori-2087771b3/" class="anchored" target="_blank">LinkedIn</a> ||
+               <a href="https://instagram.com/huzaifa.ghori?igshid=YmMyMTA2M2Y=" class="anchored" target="_blank">Instagram</a> ||
+               <a href="https://www.facebook.com/huzaifa.ghori.9" class="anchored" target="_blank">Facebook</a>
+              </li>
+          </ul>
+        </li>
+        <!-- <li>Worked with several software-houses as a freelancer</li> -->
+        <!-- <li>Knows basics of graphic designing and had designed logos for local business, You can also visit <a href="#" class="anchored">Gallery</a> to check my graphic designing Experience</li> -->
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead2">Education</h3>
+    <ul class="listed" >
+        <li>Have completed my S.S.C with 75%</li>
+        <li>Have completed my H.S.C with 65%</li>
+        <li>Have completed my Hifz-Quran with 70%</li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead2">Personal Information</h3>
+    <ul class="listed" >
+        <li>Date of Birth: 19-October-2000</li>
+        <li>Religion: Islam</li>
+        <li>Nationality: Pakistani</li>
+    </ul>
+    <hr class="gaped">
+    <h3 class="sidedhead2">Skills & Abilities</h3>
+    <ul class="listed" >
+        <li>Fast Typing</li>
+        <li>Problem Solving</li>
+        <li>Programming</li>
+        <li>Website Developement</li>
+        <li>Team Work</li>
+        <li>Communication Skills</li>
+        <li>Graphic Designing</li>
+        <li>Photography</li>
+    </ul>
+</div>
+</div>
+
+<hr class="gaped">
+
+<!-- --------------------COMPLAINS------------------ -->
+<div class="container contactMe">
+  <h2 class="headttl">Contact</h2>
+  <div class="container">
+  <p>You can also contact me incase of any glitch or about CV generator...</p>
+  <div class="card text-white bg-secondary mb-3" style="max-width: 100rem;">
+    <div class="container">
+    <div class="container">
+    <div class="container">
+    <div class="container">
+    <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Full Name</label>
+        <input type="text" class="form-control response" id="exampleFormControlInput1" placeholder="Huzaifa Ghori">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Whatsapp Number</label>
+        <input type="text" class="form-control response" id="exampleFormControlInput1" placeholder="+923042490922">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Subject</label>
+        <input type="text" class="form-control response" id="exampleFormControlInput1" placeholder="Why are you writing?...Is it Comlpain?">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Your Query</label>
+        <textarea class="form-control response" id="exampleFormControlTextarea1" rows="3" placeholder="Write Your Message Here... I'm waiting for you.."></textarea>
+      </div>
+    </form>
+    <button type="button" class="btn btn-danger" id="formclearbtn">Clear</button>
+    <button type="button" class="btn forgif btn-dark" id="formsubitbtn">Submit</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr class="gaped">
+<div class="Certified">
+<h2 class="headttl">Certifications</h2>
+<img src="./projpge/Saly-38.png" alt="" class="character1">
+<img src="./projpge/Front-End Web developer Jawan Pakistan.jpg" alt="Frontend Certificate" class="html certificate">
+<img src="./projpge/Saly-19.png" alt="" class="character2">
+<img src="./projpge/Python Certificate Cisco.PNG" alt="Frontend Certificate" class="python certificate">
+<img src="./projpge/Saly-26.png" alt="" class="character3">
+    <img src="./projpge/IEEE Certificate of Participation.jpg" alt="Frontend Certificate" class="IEEE certificate">
+</div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+      <script src="cv.js"></script>
+      <script src="complains.js"></script>
 </body>
 </html>

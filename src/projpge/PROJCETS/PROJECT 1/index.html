@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearls of Books</title>
+    <link rel="stylesheet" href="Style/shelfstyle.css">
+    <link rel="stylesheet" href="Style/styleS.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+<body onload="forbook()">
+  <div class="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+    <a href="index.html" class="logoref"><div class="logo" id="logo">
+      <img src="logo/Bookpearl.svg" alt="">
+      <img src="Logo/Logotext.svg" alt="">
+    </div></a>
+    <div class="navs" id="navs">
+      <ul class="ul" id="UL">
+        <li class="list"><a href="index.html">Home</a> </li>
+        <li class="list"><a href="blog.html">Blog</a></li>
+        <li class="list"><a href="Contact.html">Contact Us</a></li>
+        <li class="list"><a href="about.html">About Us</a></li>
+        <li class="list"><a href="form.html">Login/Signup</a></li>
+        <div class="search-box">
+        <input  type="text" placeholder=" "/><span></span>
+      </div>
+      </ul>
+    </div>
+</div>
+
+    <!-- ---------------------------Content------------------ -->
+
+    
+    <div class="nodisp" id="cates">
+<form>
+<input type="number" name="" id="catno" class="catesCC" placeholder="Category number">   
+<input type="text" name=""  id="catnme" class="catesC" placeholder="Category name">   
+<input type="text" name="" id="newid" class="catesid" placeholder="Enter New Shelf id">   
+<input type="text" name="" id="newclass" class="catesClass" placeholder="Enter New Shelf Class">   
+<input type="text" name="" id="newFun" class="catesFun" placeholder="Enter function">   
+<input type="text" name="" id="newbackFun" class="catesFunbck" placeholder="Enter back btn function">   
+ <input type="text" id="subtlecat" placeholder="sub line">
+ <select name="" id="bookclassC" required>
+  <option>Select Book Color</option>
+  <option value="book book-cat-1">Purple</option>
+  <option value="book book-cat">Maroon-pink</option>
+  <option value="book book-cat-3">Grey</option>
+  <option value="book book-cat-4">lime</option>
+  <option value="book book-cat-5">Blue light</option>
+  <option value="book book-green">book book-green</option>
+  <option value="book book-umber">book book-umber</option>
+  <option value="book book-blue">book book-blue</option>
+  <option value="book book-springer">book-springer</option>
+</select>
+<select id="tiltedC" required>
+  <option>Select Tilt</option>
+  <option value="no">no tilt</option>
+  <option value="yes">tilt</option>
+</select>
+<button type="button" onclick="addcat()">add</button>
+</form>
+</div>
+
+
+<main class="l-main" id="mains">
+    <div class="l-home-hero region">
+        <div class="door-wrap" id="maingate" onclick="doorchange()">
+            <div id="door-left" class="door left">
+                <div id="card-left" class="card left">
+                  <img src="Logo/gateleft.svg" class="gateleft" alt="">
+                    <!-- <svg> -->
+                        <!--<rect id="rect-bg-left" fill="#111" width="100%" height="100%" x="0" y="0"/>-->
+                        <!-- <rect id="rhomb1" fill="#99badd" width="20" height="30" x="230" y="120"/>
+                        <polygon id="hockey1" fill="#99badd" points="300,150 250,100 230,100, 210,70 250,70" />
+                        <polygon id="hockey2" fill="#99badd" points="300,120 250,50 230,50, 210,20 270,20" />
+                        <polygon id="tri1" fill="#99badd" points="290,20 310,5 310,35" />
+                    </svg> -->
+                </div>
+            </div>
+            <div id="door-right" class="door right">
+                <div id="card-right" class="card right">
+                  <img src="Logo/gateright.svg" class="gateright" alt="">
+                  <!-- <svg> -->
+                    <!--<rect id="rect-bg-right" fill="#111" width="100%" height="100%" x="0" y="0"/>-->
+                    <!-- <polygon id="tri2" fill="#99badd" points="290,20 310,5 310,35" /> -->
+                        <!--<rect id="diamond1" fill="#99badd" width="20" height="20" x="310" y="20" />-->
+                        <!--<path id="pathRect" d="M50 100 L150 100 L180 200 L80 200 Z" />-->
+                        <!-- <polygon id="hockey3" fill="#99badd" points="300,150 250,100 230,100, 210,70 250,70" />
+                        <polygon id="hockey4" fill="#99badd" points="300,120 250,50 230,50, 210,20 270,20" />
+                        <rect id="rhomb2" fill="#99badd" width="20" height="30" x="370" y="120"/>
+                      </svg> -->
+                    </rect>
+            </div>
+          </div>
+          
+        </div>
+      </main>
+    <div id="foradd">
+        <div class="sec1" id="section">
+          
+          
+          <!-- <div class="l-page"> -->
+
+                  <div>
+                    
+                  </div>
+                  
+                <div id="catshelf">
+                  <h2 class="cate-head">choose your Desire category</h2>
+                  <div class="forbookshelf catshelf">
+                  <div class="book book-cat-1" onclick="shelfhide()">
+                    <h2>Animation</h2>
+                  </div><div class="book book-cat"  onclick="shelfhide2()">
+                    <h2>Comics</h2>
+                  </div><div class="book-tilted"><div class="book book-cat-3" onclick="shelfhide3()">
+                    <h2>Sci-fi</h2>
+                  </div></div><div class="book book-cat-4" onclick="shelfhide4()">
+                    <h2>Magic</h2>
+                  </div><div class="book book-cat-5" onclick="shelfhide5()">
+                    <h2>Zoology</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-umber">
+                    <h2>Category</h2>
+                  </div><div class="book book-springer">
+                    <h2>Category</h2>
+                  </div><div class="book book-blue">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book-tilted"><div class="book book-umber">
+                    <h2>Category</h2>
+                  </div></div><div class="book book-blue">
+                    <h2>Category</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-umber">
+                    <h2>Category3</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2>
+                  </div><div class="book book-blue">
+                    <h2>Category</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-springer">
+                    <h2>Category3</h2>
+                  </div><div class="book book-springer">
+                    <h2>Category</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2>
+                  </div> <div class="book book-blue">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-blue">
+                    <h2>Category3</h2>
+                  </div><div class="book book-blue">
+                    <h2>Category</h2>
+                  </div><div class="book book-umber">
+                    <h2>Category</h2>
+                  </div><div class="book book-blue">
+                    <h2>Category3</h2>
+                  </div><div class="book-tilted"><div class="book book-green">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div></div><div class="book book-springer">
+                    <h2>Category</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-umber">
+                    <h2>Category3</h2>
+                  </div><div class="book book-blue">
+                    <h2>Category</h2>
+                  </div><div class="book book-umber">
+                    <h2>Category</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-green">
+                    <h2>Category3</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2>
+                  </div><div class="book book-green">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-springer">
+                    <h2>Category3</h2>
+                  </div><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-springer">
+                    <h2>Category</h2>
+                  </div><div class="book book-umber">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-green">
+                    <h2>Category3</h2>
+                  </div><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-umber">
+                    <h2>Category</h2>
+                  </div><div class="book book-blue">
+                    <h2>Category</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-springer">
+                    <h2>Category3</h2>
+                  </div><div class="book book-green">
+                    <h2>Category3</h2>
+                  </div>
+                </div>
+                </div>
+                <!-- partial -->
+                <div id="bookshelf1">
+                  <h2 class="bookhead bookheadcolor1">Select your book</h2>
+                  <div class="forbookshelf bookshelf1">
+                  <a class="backshelf" onclick="backshelf1()"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                
+                  <a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2> Harry Potter </h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-umber">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div></a><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-springer">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div> <div class="book book-blue">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-blue">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-umber">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book-tilted"><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div>
+                </div>
+                <!-- partial -->
+                    </div>
+                <div id="bookshelf2">
+                  <h2 class="bookhead bookheadcolor2">Select your book</h2>
+                  <div class="forbookshelf bookshelf2" >
+                  <a class="backshelf" onclick="backshelf2()"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                
+                  <a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2> Harry Potter </h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-umber">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div></a><div class="book book-umber">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-springer">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-blue">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book-tilted"><div class="book book-umber">
+                    <h2>Harry Potter</h2>
+                  </div></div><div class="book book-blue">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-umber">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-blue">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-springer">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div> <div class="book book-blue">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-blue">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-umber">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book-tilted"><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div>
+                </div>
+                <!-- partial -->
+                    </div>
+                <div id="bookshelf3">
+                  <h2 class="bookhead bookheadcolor3">Select your book</h2>
+                  <div class="forbookshelf bookshelf3" >
+                  <a class="backshelf" onclick="backshelf3()"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                
+                  <a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2> Harry Potter </h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-umber">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div></a><div class="book book-umber">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-springer">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-blue">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book-tilted"><div class="book book-umber">
+                    <h2>Harry Potter</h2>
+                  </div></div><div class="book book-blue">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-umber">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-blue">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-springer">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div> <div class="book book-blue">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-blue">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-umber">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book-tilted"><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div>
+                </div>
+                <!-- partial -->
+                    </div>
+                <div id="bookshelf4">
+                  <h2 class="bookhead bookheadcolor4">Select your book</h2>
+                  <div class="forbookshelf bookshelf4" >
+                  <a class="backshelf" onclick="backshelf4()"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                
+                  <a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2> Harry Potter </h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-umber">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div></a><div class="book book-umber">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-springer">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-blue">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book-tilted"><div class="book book-umber">
+                    <h2>Harry Potter</h2>
+                  </div></div><div class="book book-blue">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-umber">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-blue">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-springer">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div> <div class="book book-blue">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-blue">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-umber">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book-tilted"><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div>
+                </div>
+                <!-- partial -->
+                    </div>
+                <div id="bookshelf5">
+                  <h2 class="bookhead bookheadcolor5">Select your book</h2>
+                  <div class="forbookshelf bookshelf5" >
+                  <a class="backshelf" onclick="backshelf5()"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                
+                  <a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2> Harry Potter </h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-umber">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></a><a href="https://drive.google.com/file/d/0B_3AS4FE7PQ1c3RhcnRlcl9maWxl/view?usp=sharing&resourcekey=0-Uvt1whdN4rl6MvfM6Y5mPg"><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div></a><div class="book book-umber">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-springer">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-blue">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book-tilted"><div class="book book-umber">
+                    <h2>Harry Potter</h2>
+                  </div></div><div class="book book-blue">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-umber">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-green">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-blue">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-springer">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-green">
+                    <h2>CSS For Dummies</h2>
+                  </div> <div class="book book-blue">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book book-blue">
+                    <h2>Introducing HTML5</h2>
+                  </div><div class="book book-umber">
+                    <h2>CSS For Dummies</h2>
+                  </div><div class="book book-blue">
+                    <h2>Harry Potter</h2>
+                  </div><div class="book-tilted"><div class="book book-green">
+                    <h2>Actionscript:</h2><h3>The Definitive Guide</h3>
+                  </div></div><div class="book book-springer">
+                    <h2>Introducing HTML5</h2>
+                  </div>
+                </div>
+                <!-- partial -->
+                    </div>
+                  </div>
+                
+        </div>
+            <!-- <div class="lorem1">
+                <p class="sublore1 slide-right">lorem ipsum</p>
+                <p class="sublore2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias commodi exercitationem laborum, sequi quasi aut et sapiente quis nam obcaecati facilis corporis. Sequi magnam nulla saepe corporis asperiores minima voluptate.</p>
+            </div>
+            <img src="Asset 4@1080x-100.jpg" alt="library bg"> -->
+    <!-- </div> -->
+
+
+
+<!-------------------- FOOOOOOOOOOOOOOOOOOOOOOTER ------------------->
+<footer>
+  <div class="footer-content">
+    <h3>Pearls of Books</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vel cumque est veritatis possimus voluptas, commodi rem quisquam aliquid ratione nulla voluptate molestiae delectus odit nam iusto, illum animi doloremque!</p>
+    <ul class="socials">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>copyright &copy;2021 PearlsofBooks.</p>
+  </div>
+  
+  
+</footer>
+<script src="Script/newshelf.js"></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js'></script>
+<script src="Script/script.js"></script>
+      <script src="Script/scriptS.js"></script>
+</body>
+</html>

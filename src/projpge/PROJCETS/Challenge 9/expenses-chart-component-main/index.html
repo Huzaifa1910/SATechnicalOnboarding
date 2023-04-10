@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <div class="distrib1">
+        <div class="left">
+          <p>My balance</p>
+
+          <h2>$921.48</h2>
+        </div>
+
+        <div class="right">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+      </div>
+      <div class="distrib2">
+        <h2 class="contain1">Spending - Last 7 days</h2>
+        <div class="contain2">
+          <div class="prices">
+            <div class="price monp">$52.36</div>
+            <div class="price tuep">$52.36</div>
+            <div class="price wedp">$52.36</div>
+            <div class="price thup">$52.36</div>
+            <div class="price frip">$52.36</div>
+            <div class="price satp">$52.36</div>
+            <div class="price sunp">$52.36</div>
+          </div>
+          <div class="bars">
+            <div class="barDefualt mon" id="mon"></div>
+            <div class="barDefualt tue" id="tue"></div>
+            <div class="barDefualt wed" id="wed"></div>
+            <div class="barDefualt thu" id="thu"></div>
+            <div class="barDefualt fri" id="fri"></div>
+            <div class="barDefualt sat" id="sat"></div>
+            <div class="barDefualt sun" id="sun"></div>
+          </div>
+          <div class="day">
+            <div class="days">mon</div>
+            <div class="days">tue</div>
+            <div class="days">wed</div>
+            <div class="days">thu</div>
+            <div class="days">fri</div>
+            <div class="days">sat</div>
+            <div class="days">sun</div>
+          </div>
+        </div>
+        <hr class="gape">
+        <div class="contain3">
+          <div class="leftSide">
+           <p class="tMonth"> Total this month</p> 
+             <h1 class="reve">$478.33</h1>
+          </div>
+          <div class="rightSide">
+          <p class="perc"> +2.4%</p> 
+            <p class="lMonth"> from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="huzaifaghoriport.web.app">Muhammad Huzaifa Ghori</a>.
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
+

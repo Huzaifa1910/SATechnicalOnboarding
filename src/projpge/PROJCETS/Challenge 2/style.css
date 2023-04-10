@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+.text{
+    width: 35rem;
+    /* padding: 5px; */
+    margin: 0px 30px 100px 40px;
+    height: 15rem;
+    /* background-color: aqua; */
+    color: white    ;
+}
+.imge{
+    background-image: url("./images/image-header-desktop.jpg");
+        border-radius: 0px 10px 10px 0px;
+        background-repeat: no-repeat;
+    background-size: 30.05rem;
+    /* background-color: aqua; */
+    height: 25rem;
+    /* width: 2rem; */
+    float: right ;
+    margin-top: 2px;
+}
+.inlines{
+        border-radius: 10px 10px 10px 10px;
+        background-color: hsl(244, 38%, 16%);
+    width: 66rem;
+    height: 24.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0 ;
+    /* margin: 0; */
+}
+.layer{
+    margin: 0 !important;
+    height: 24.8rem;
+    width: 30rem;
+    background-color: #4f0b7959;
+        border-radius: 0px 10px 10px 0px;
+        position: relative;
+}
+.main{
+    background-color: hsl(233, 47%, 7%);
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.busines{
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.clrpurp{
+    color: hsl(277, 64%, 61%);
+}
+.discover{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+.pera-inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; 
+    margin-top: 40px;
+    width: 24rem;
+}
+.pera-inline p{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+}
+
+.pera-inline p>span{
+    display: block;
+    padding: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 375px){
+    .main{
+        background-color: hsl(233, 47%, 7%);
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .inlines{
+        border-radius: 10px 10px 10px 10px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        width: 325px;
+        height: 54.9rem;
+        margin: 100px 0px 10px 0px;
+        margin: auto;
+    }    
+    .text{
+        width: 19rem;
+        /* padding: 5px; */
+        margin: 0px 10px 215px 15px;
+        height: 15rem;
+        /* background-color: aqua; */
+        color: white;
+        text-align: center;
+    }
+    .imge{
+        border-radius: 10px 10px 0px 0px;
+        background-image: url("./images/image-header-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: 21rem;
+        /* background-color: aqua; */
+        height: 20rem;
+        width: 100%;
+        float: right ;
+        margin-top: 0px;
+    }
+    .layer{
+        border-radius: 10px 10px 0px 0px;
+        margin: 0 !important;
+        height: 15.48rem;
+        width: 100%;
+        position: relative;
+    }
+    .busines{
+        font-family: 'Lexend Deca', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .pera-inline{
+        display: block;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 40px;
+        width: 18rem;
+    }
+}

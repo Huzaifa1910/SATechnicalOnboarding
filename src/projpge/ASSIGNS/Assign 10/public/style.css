@@ -1,0 +1,163 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navi li{
+    display: inline;
+}
+.bar{
+    background-color: whitesmoke;
+    text-align: center;
+}
+.upper{
+box-shadow: 0px 0px 5px grey;
+}
+.barscnd ul div{
+    display: inline-block;
+}
+.barscnd{
+    
+    text-align: center;
+}
+.barscnd ul div img{
+    width: 60px;
+    padding-left: 35px;
+    padding-right: 30px;
+}
+.barscnd ul div p{
+    text-align: justify;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: absolute;
+}
+.main{
+    padding: 10px 0px 30px 0px;
+}
+.barcolors{
+    width: 130px;
+    height: 4px;
+    display: inline-block;
+    margin: 0px -10px 0px 0px;
+}
+#one{
+    background-color: grey;
+}
+#two{
+    background-color: red;
+}
+#three{
+    background-color: green;
+}
+#four{
+    background-color: royalblue;
+}
+#five{
+background-color: yellow;
+}
+#six{
+    background-color: violet;
+}
+#seven{
+    background-color: saddlebrown;
+}
+.container{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+#hom:hover{
+    background-color: grey;
+}
+#pok:hover{
+    background-color: red;
+}
+#vga:hover{
+    background-color: green;
+}
+#tcg:hover{
+    background-color: royalblue;
+}
+#pt:hover{
+background-color: yellow;
+}
+#play:hover{
+    background-color: violet;
+
+}
+#news:hover{
+    background-color: saddlebrown;
+}
+.PR{
+    background-color: #b38aea;
+
+    border-radius: 10px;
+    padding: 0px -60px 0px -60px;
+}
+.PRs{
+    position: relative;
+    background-image: url(Extras/unnamed.jpg);
+    background-color: white;
+    right: 10px;
+}
+.PRs div{
+    display: inline-block;
+    
+}
+.PR a:link{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+.PR p{
+    color: white;
+}
+#PRi{
+background-color:#675945;
+border-radius: 10px;
+}
+#PRi a:link{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+#PRi p{
+    color: white;
+    font-size: 15px;
+}
+#PRii{
+    background-color: #c7aa79 ;
+    border-radius: 10px;
+    
+}
+#PRii a:link{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+#PRii p{
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    text-align: top;
+}
+.same div{
+    position: relative;
+    right: 10px;
+}
+.list{
+    text-align: center;
+    background-color: darkgrey;
+}
+.list span{
+    display: inline-block;
+}
+.list span a img{
+    width: 250px;
+}
+.last{
+    background-image: url(Extras/unnamed.jpg);
+    margin: px;
+    padding: 100px;
+}

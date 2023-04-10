@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bitter&family=Josefin+Sans:wght@312&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    font-family: 'Red Hat Display', sans-serif;
+}
+.container{
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 1000px;
+    background-color: hsl(225, 100%, 94%);
+    
+}
+.container2{
+    margin: auto;
+    background-color: #fff;
+    width: 400px;
+    position: relative;
+    top: 200px;
+    border-radius: 20px 20px 20px 20px;
+    height: 630px;
+}
+.imgs{
+    border-radius: 20px 20px 0px 0px;
+    width: 400px;
+
+}
+.head{
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    width: 400px;
+    font-weight: 900;
+}
+.headpear{
+    color: hsl(0, 0%, 45%);
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    width: 265px;
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    width: 350px;
+    height: 100px;
+}
+.imgmusic{
+    margin-left: 30px;
+    /* margin-top: 40px; */
+    /* padding: 25px 0px 0px 25px; */
+}
+.annual{
+    color: hsl(222, 21%, 23%);
+    font-weight: 700;
+    margin-left: 30px;
+}
+.prc{
+    font-weight: 500;
+    color: hsl(0, 0%, 45%);
+}
+.btn{
+    margin-left: 80px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.btns{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 350px;
+    height: 60px;
+    border-radius: 15px;
+}
+.btn1{
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn1:hover{
+    box-shadow: 0px 20px 50px rgb(104, 104, 104);
+    transition: all 0.3s;
+}
+.btn2{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(0, 0%, 45%);
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        width: 375px;
+        height: 700px;
+        background-color: hsl(225, 100%, 94%);
+        
+    }   
+    .container2{
+        margin: auto;
+        background-color: #fff;
+        width: 300px;
+        position: relative;
+        top: 20px;
+        border-radius: 20px 20px 20px 20px;
+        height: 550px;
+    }
+    .imgs{
+        border-radius: 20px 20px 0px 0px;
+        width: 300px;
+    
+    }
+    .head{
+        color: hsl(223, 47%, 23%);
+        text-align: center;
+        width: 300px;
+        font-weight: 900;
+    }
+    .headpear{
+        color: hsl(0, 0%, 45%);
+        margin: auto;
+        font-size: 16px;
+        text-align: center;
+        width: 265px;
+    }
+    .container3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:left;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 20px;
+        width: 250px;
+        height: 100px;
+    }
+    .imgmusic{
+        margin-left: 10px;
+        /* margin-top: 40px; */
+        /* padding: 25px 0px 0px 25px; */
+    }
+    .annual{
+        color: hsl(222, 21%, 23%);
+        font-weight: 700;
+        margin-left: 10px;
+    }
+    .prc{
+        font-weight: 500;
+        color: hsl(0, 0%, 45%);
+    }
+    .btn{
+        margin-left: 20px;
+        color: hsl(245, 75%, 52%);
+        font-weight: 700;
+    }
+    .btns{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 10px;
+        width: 250px;
+        height: 60px;
+        border-radius: 15px;
+    }
+    .btn1{
+        background-color: hsl(245, 75%, 52%);
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .btn1:hover{
+        box-shadow: 0px 20px 50px rgb(104, 104, 104);
+        transition: all 0.3s;
+    }
+    .btn2{
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        font-weight: 700;
+        font-size: 16px;
+        color: hsl(0, 0%, 45%);
+    }
+}

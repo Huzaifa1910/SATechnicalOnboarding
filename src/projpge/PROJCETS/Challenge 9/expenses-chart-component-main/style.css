@@ -1,0 +1,130 @@
+@import url('http://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+body{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(27, 66%, 92%);
+}
+.project{
+    margin: auto;
+}
+.distrib1{
+    width: 320px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 10px;
+}
+.distrib2{
+    margin-top: 10px;
+    height: 350px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    /* align-items: center; */
+}
+.day{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    font-size: 11px !important;
+    color: grey !important;
+    right: 5px;
+}
+.contain3{
+    display: flex;
+    justify-content: space-between;
+}
+.bars{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+    width: 320px;
+    height: 150px;
+}
+.barDefualt{
+    width: 38px;
+    margin: 0px 4px;
+    /* height: 50px;     */
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+}
+.reve{
+    position: relative;
+    bottom: 20px;
+}
+.perc{
+    position: relative;
+    top: 18px;
+    left: 65px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.tMonth,.lMonth{
+    font-size: 13px !important;
+    color: grey !important;
+}
+.left{
+    font-size: 13px !important;
+    color: #fff;
+}
+.left p{
+    position: relative;
+    top: 10px;
+    font-size: 12px;
+}
+.left h2{
+    position: relative;
+    bottom: 5px;
+    font-size: 20px;
+}
+.right img{
+    width: 50px;
+}
+.contain1{
+    position: relative;
+    left: 5px;
+    top: 15px;
+}
+.highBar{
+    background-color: hsl(186, 34%, 60%);
+}
+.barDefualt:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.price{
+    font-size: 12px;
+    font-weight: 700;
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    width: 45px;
+    border-radius: 5px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prices{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 150px;
+}
+.monp,.tuep,.wedp,.thup,.frip,.satp,.sunp{
+    position: relative;
+    opacity: 0;
+}
+.vsble{
+    opacity: 100;
+}

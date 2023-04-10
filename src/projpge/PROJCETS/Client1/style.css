@@ -1,0 +1,861 @@
+@font-face {
+    font-family: "futura_mid";
+    src: url("./fonts/futura\ medium\ bt.ttf");
+    
+  }
+@font-face{
+    font-family: "futura_reg";
+    src: url("./fonts/futur.ttf");
+}
+@font-face{
+    font-family: "futura_bold";
+    src: url("./fonts/Futura\ Bold\ font.ttf");
+}
+@font-face{
+    font-family: "futura_lightC";
+    src: url("./fonts/Futura\ Light\ font.ttf");
+}
+@font-face{
+    font-family: "gilroy";
+    src: url("./fonts/FontsFree-Net-Gilroy-ExtraBold.ttf");
+}
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "futura_mid";
+}
+body{
+   background-color:  #161A2B;
+}
+.margins{
+    margin: auto;
+}
+.li-clr a:hover{
+    color: #2DCAF8 !important;
+}
+.HeadAbout{
+    color: #EDEDED;
+    position: relative;
+    top: 100px;
+    font-size: 43px;
+}
+.HeadPera{
+    font-family: "futura_mid";
+    width: 750px;
+    position: relative;
+    top: 130px;
+    font-size: 25px;
+    font-weight: 100px;
+}
+.triIcon{
+    position: relative;
+    left: 20px;
+    width: 20px;
+}
+.AboutUs{
+    background-color: #1F2233;
+    height: 500px;
+    color: #EDEDED;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 100px;
+    /* flex-direction: row; */
+}
+.marginS{
+    height: 100%;
+    width: 250px !important;
+    position: relative;
+    right: 150px;
+}
+.exper{
+    width: 250px;
+    position: relative;
+    /* left: 100px; */
+    top: 150px;
+    font-family: "gilroy";
+}
+.tenplus{
+    position: relative;
+    left: 10px;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.years{
+    font-size: 45px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 8px;
+    height: 20px !important;
+    width: 50px;
+    text-decoration: underline;
+}
+
+
+.experience{
+    font-size: 45px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 8px;
+    height: 20px !important;
+    width: 50px;
+    text-decoration: underline;
+}
+.fonted{
+    font-size: 25px;
+}
+.center{
+    text-align: center;
+}
+
+.head{
+    display: flex;
+    margin-top: 100px;
+}
+.headSide1{
+    color: #EDEDED;
+    width: 65%;
+    padding-left: 190px;
+}
+
+.headSide2{
+    color: #EDEDED;
+    width: 50%;
+}
+.transparent{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+.transparent ul{
+    color: #EDEDED !important;
+}
+.quarter{
+    width: 140px;
+    height: 60px;
+    border-bottom: 3px solid #2DCAF8;
+    border-left: 2px solid #2DCAF8;
+    position: relative;
+    bottom: 65px;
+    right: 10px;
+}
+.arrowIcon{
+    width: 20px;
+    padding-bottom: 1px;
+}
+.downIcon{
+    width: 25px;
+    padding-bottom: 5px;
+}
+.btnEmail{
+    background-color: #165467;
+    color: #EDEDED;
+    margin-bottom: 2px;
+}
+.btnCV{
+    color: #EDEDED;
+}
+.btnCV:hover{
+    border: 1px solid #2DCAF8;
+    color: #EDEDED;
+    transition: all 0.3s;
+}
+/* .quarter2{
+    border-bottom: 2px solid #2DCAF8;
+    width: 100px;
+    position: relative;
+    left: 186px;
+    bottom: 10px;
+}
+.quarter2:hover{
+    opacity: 100%;
+    transition: all 0.3s;
+} */
+.ellipse2{
+    width: 330px;
+}
+.ellipse1{
+    width: 200px;
+    position: relative;
+    right: 405px;
+    bottom: 30px;
+}
+.ellipse3{
+    position: relative;
+    width: 110px;
+    bottom: 410px;
+    left: 120px;
+}
+.btncontact{
+    border: 1px solid #165467;
+    color: #EDEDED;
+}
+.btncontact:hover{
+    color: #EDEDED;
+    background-color: #165467;
+}
+.arrow{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow img{
+    width: 34px;
+    position: relative;
+    bottom: 60px;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    height: 678px;
+}
+.skil{
+    width: 90%;
+}
+.lingos{
+    background-image: url("./images/Ellipse\ 2.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 32px 335px;
+    width: 50%;
+    height: 678;
+}
+.cards{
+    position: relative;
+    top: 100px;
+}
+.vuejs{
+    width: 65px;
+    position: relative;
+    top: 35px;
+    left: 35px;
+}
+.vuejscard{
+    color: #EDEDED;
+    border: #165467 1px solid;
+    background-color: #00000050;
+}
+.cardfont{
+    font-size: 20px;
+}
+.carmargin{
+    margin: 0;
+    font-weight: bolder;
+    color: #2DCAF8;
+}
+.Nodejs{
+    width: 50px;
+    position: relative;
+    top: 35px;
+    left: 43px;
+
+}
+.progressed{
+    position: relative;
+    top: 150px;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.progressLabel{
+    color: #2DCAF8;
+    font-weight: bold;
+    font-size: 18px;
+}
+.python, .javascript, .cPlus{
+    
+    width: 350px;
+    
+}
+.bg-progressed{
+    background-color: #2DCAF8;
+}
+.bgBase{
+    background-color: #165467;
+}
+.progInfo{
+    color: white;
+    float: right;
+    position: relative;
+    /* right: 75px; */
+    font-size: 12px;
+    font-weight: bolder;
+    top: 15px;
+}
+.jsInfo{
+    right: 75px;
+}
+.pyInfo{
+    right: 165px;
+}
+.cInfo{
+    right: 105px;
+}
+.overlap{
+    width: 250px;
+    position: relative;
+    bottom: 70px;
+    right: 150px;
+}
+.carouCards{
+    height: 800px;
+    background-color: #1F2233;
+}
+.cardCrou{
+    position: relative;
+    top: 150px;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    border: 2px solid #165467;
+    height: 500px;
+    border-radius: 6px;
+    background-color: #161A2B;
+    display: flex;
+}
+.left{
+    width: 30%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+.right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imgGgle{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google{
+    width: 33px;
+    height: 33px;
+}
+.gle{
+    text-align: center;
+    font-size: 26px;
+    color: white;
+}
+.workHere{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.fewords{
+    font-size: 36px;
+    color: #2DCAF8;
+    font-weight: 700;
+}
+.fewords2{
+    font-size: 22px;
+    color: white;
+    width: 90%;
+}
+.carousel{
+    display: flex;
+    height: 700px !important;
+}
+.carArrow{
+    position: relative;
+    top: 350px;
+    width: 30px;
+    height: 30px;
+}
+.rightArrow{
+    left: 60px;
+}
+.leftArrow{
+    right: 60px;
+}
+.qualifications{
+    height: 900px;
+    width: 100%;
+}
+.carD{
+    width: 15rem;
+    height: 27rem;
+    border: 1px solid #165467;
+    background-color: #1D1F2F;
+    color: white;
+    border-radius: 5px;
+}
+.carD img{
+    width: 15rem;
+    height: 27rem;
+}
+.carouselCard{
+    color: white;
+    position: relative;
+    top: 150px;
+}
+.qualName{
+    position: relative;
+    top: 10px;
+}
+.carDs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btnViewMore{
+    border: 1px solid #165467;
+    position: relative;
+    left: 500px;
+    color: white;
+}
+.btnViewMore:hover{
+    color: white;
+    background-color: #165467;
+}
+.connect{
+    width: 50%;
+    font-family: "futura_mid";
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+.formC{
+    width: 55%;
+    padding:50px;
+    border: 1px solid #165467;
+    background-color: #1F2233;
+}
+.contactMe{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 55%;
+    position: relative;
+    height: 700px;
+}
+.formC input, .formC textarea{
+    background-color: #161A2B;
+    border: 1px solid #165467;
+    color: white;
+}
+.btnFromC{
+    position: relative;
+    left: 120px;
+    background-color: #165467;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.btnFromC img{
+    margin-left: 4px;
+}
+.socialIcons{
+    position: relative;
+    bottom: 50px;
+}
+.footer{
+    width: 100%;
+    height: 190px;
+    background-color: #1F2233;
+    color: white;
+ 
+}
+.footerF{
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoF h2{
+    font-weight: bold;
+    position: relative;
+    bottom: 20px;
+}
+.imgsDiscord img{
+    width: 30px;
+    margin: 5px;
+}
+.imgsDiscord{
+    position: relative;
+    bottom: 10px;
+    left: 167px;
+}
+.copy{
+    position: relative;
+    top: 40px;
+}
+.description{
+    position: relative;
+    left: 100px;
+}
+.description p{
+    padding: 30px 0px;
+    text-align: center;
+}
+.blueHeart{
+    width: 20px;
+}
+.scroll{
+    text-decoration: none;
+    color: white;
+}
+.scroll:hover{
+    color: #2DCAF8;
+    text-decoration: none;
+}
+.boris{
+    position: relative;
+    top: 20px;
+}
+.overlap2{
+    width: 250px;
+    position: absolute;
+    right: -0px;
+    float: right;
+    overflow: hidden;
+    height: 250px;
+}
+.overlap2img{
+    width: 220px;
+    position: relative;
+    top: 20px;
+    right: -120px;
+}
+.overlap3img{
+    width: 120px;
+    position: relative;
+    top: 20px;
+    right: -180px;
+}
+.overlap4{
+    position: absolute;
+    left: -170px;
+}
+@media (max-width: 600px) {
+    body{
+        width: 375px !important;
+    }
+    *{
+        text-align: center;
+    }
+    .overlapNone{
+        display: none !important;
+    }
+    .headSide1{
+        width: 330px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 20px;
+    }
+    .AboutUs{
+        flex-direction: column;
+        width: 100%;
+        height: 1000px;
+        padding: 0 !important;
+    }
+    .HeadPera{
+        width: 425px !important;
+    }
+    .skills{
+        position: relative;
+        height: 900px;
+        flex-direction: column;
+    }
+    .carouCards{
+        height: 1000px;
+        position: relative;
+        top:300px;
+        background-color: #1d1f2f00;
+    }
+    .qualifications{
+        position: relative;
+        top: 10px;
+    }
+    .btnViewMore{
+        left: 1px;
+    }
+    .contactMe{
+        flex-direction: column;
+        position: relative;
+        top: 700px;
+    }
+    .formC{
+        padding: 20px;
+        width: 350px;
+        height: 800px;
+    }
+    .formC input{
+        text-align: start;
+        padding: 20px;
+    }
+    .footer{
+        position: relative;
+        top: 800px;
+        height: 280px;
+    }
+    .carArrow{
+        display: none;
+    }
+    .imgsDiscord{
+        left: 50px;
+        width: 100px;
+        top: 10px;
+        margin: 0 !important;
+    }
+    .copy{
+        position: relative;
+        width: 150px;
+    }
+    .copy p{
+        width: 290px;
+        position: relative;
+        right: 180px;
+        top: 50px;
+    }
+    .description{
+        left: 60px;
+    }
+    .description p{
+        padding: 20px 0px;
+        width: 200px;
+        text-align: center;
+    }
+    .logoF{
+        width: 10px;
+        position: relative;
+        top: 50px;
+    }
+    .boris{
+        font-size: 12px;
+        color: #EDEDED;
+        top: 120px;
+        padding-bottom: 0 !important;
+    }
+    .carDs{
+        flex-direction: column;
+    }
+     .carousel, .carouCards{
+        height: 1750px !important;
+    }
+    .carousel-inner{
+        height: 1500 !important;
+    }
+    .port2{
+        position: relative;
+        top: 500px;
+    }
+    .scnz{
+        display: flex;
+        flex-direction: column;
+        height: 3000px;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        bottom: 550px;
+    }
+    
+    .btnFromC{
+        left: 10px;
+    }
+    .connect{
+        width: 300px;
+    }
+    .cardCrou{
+        flex-direction: column;
+        height: 850px;
+    }
+    .left{
+        width: 300px;
+        text-align: start !important;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start !important;
+        position: relative;
+        top: 50px;
+        left: 20px;
+    }
+    
+    .imgGgle{
+        width: 90px;
+        height: 90px;
+        background-color: white;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .google{
+        width:27px;
+        height: 27px;
+    }
+    .right{
+        position: relative;
+        top: 70px;
+        height: 500px;
+    }
+    .fewords, .fewords2{
+        text-align: start !important;
+    }
+    .fewords{
+        top: 10px;
+        width: 300px;
+        font-size: 30px;
+    }
+    .fewords2{
+        position: relative;
+        top: 1px;
+        font-size: 20px;
+        width: 270px;
+    }
+    .workHere{
+        text-align: start !important;
+    }
+    .lingos{
+        background-image: none;
+        width: 220px;
+        height: 678;
+        position: relative;
+        left: 20px;
+        text-align: center !important;
+    }
+    .progressed{
+        width: 300px;
+    }
+    .bgBase{
+        width: 360px;
+        left: 10px;
+    }
+    .pyInfo{
+        right: 180px;
+    }
+    .cInfo{
+        right: 110px;
+    }
+    .progressLabel{
+        position: relative;
+        bottom: 10px;
+    }
+    .CL{
+        position: relative;
+        left: 50px;
+    }
+    .CL img{
+        position: relative;
+        left: -5px;
+    }
+    .vuejscard{
+        position: relative;
+        left: 40px;
+        width: 320px;
+    } 
+    .card-body p{
+        font-size: 16px;
+        text-align: center !important;
+    }
+    .carmargin{
+        position: relative;
+        right: 70px;
+        bottom: 30px;
+        font-size: 32px;
+    }
+    .vuejs{
+        position: relative;
+        left: 67px;
+    }
+    .Nodejs{
+        position: relative;
+        left: 67px;
+        width: 60px;
+    }
+    .marginS{
+        width: 300px !important;
+        margin: 0 !important;
+        position: relative;
+        left: 30px;
+        height: 580px !important;
+    }
+    .HeadPera{
+        width: 300px !important;
+        font-size: 20px;
+    }
+    .exper{
+        position: relative;
+        top: 10px;
+    }
+    .fonted{
+        width: 300px;
+    }
+    .quarter{
+        display: none;
+    }
+    .btnEmail{
+        margin: 50px 0px;
+        border-radius: 7px;
+    }
+    .head{
+        height: 600px;
+    }
+    .skil{
+        width: 300px;
+    }
+    .HeadAbout{
+        position: relative;
+        /* left: 50px; */
+    }
+    .footerf{
+        height: 270px;
+    }
+    .jumbotron h1{
+        position: relative;
+        left: 10px;
+    }
+    .breaks{
+        width: 200px;
+        position: relative;
+        left: 45px;
+    }
+    .triIcon{
+        position: relative;
+        left: 10px;
+    }
+    .breaks2{
+        width: 200px;
+        position: relative;
+        left: 90px;
+    }
+    .triIcon2{
+        position: relative;
+        top: 50px;
+        left: -40px;
+    }
+    .breaks3{
+        width: 273px;
+        position: relative;
+        left: 30px;
+        text-align: center !important;
+    }.breaks5{
+        position: relative;
+        left: 90px;
+        width: 150px;
+    }.folioTri{
+        position: relative;
+            left: -13px;
+    }
+  }

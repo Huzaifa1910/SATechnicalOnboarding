@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+.Head{
+    background-color: #002147;
+    padding-bottom: 30px;
+    min-width: 300px;
+    max-width: 100%;
+
+}
+#list li{
+    list-style: none;
+    display: inline;
+    padding: 0% 2% 0% 8px;
+    text-decoration-color: #afb2a3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#list a{
+    text-decoration: none;
+    color: #afb2a3;
+    font-size: 20px;
+    font-weight: 650;
+
+}
+.LOGO{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.table{
+    table-layout: unset;
+    
+}
+#footer{
+    background-color:#002147;
+    padding-bottom: 500px;
+}
+#footer a{
+   text-decoration: none;
+   color: #afb2a3;
+   font-size: 32px;
+}

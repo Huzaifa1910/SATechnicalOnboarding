@@ -1,0 +1,399 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* navbar*/
+
+.navigation{
+    position: fixed;
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+
+}
+.logo img{
+    height: 6rem;
+    width: 12rem;
+    margin: 0.5rem 15rem 0.5rem 5rem ;
+}
+.options{
+   display: flex; 
+}
+.options ul{
+    display: flex;
+    margin-left: 14rem;
+}
+.options ul li{
+    list-style: none;
+    padding:35px 35px ;
+    margin-top: 10px;
+
+}
+.options ul li a{
+    font-family:  sans-serif;
+    text-transform: uppercase;
+    padding:25px 5px ;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 350;
+    transition: 0.3s;
+    letter-spacing: 3px;
+}
+.options ul li .active{
+    color: rgb(255, 115, 0);
+}
+.options ul li a:hover{
+   color: rgb(255, 115, 0);
+}
+/* end navbar */
+
+/* slider   */
+ 
+.main{
+min-height: 100vh;   
+width: 100%; 
+display:flex ;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.slider{
+     /* background: url(nf/1.jpg); */
+     background-position: top center;
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+     position: relative;
+     z-index: 1;
+     animation: slide 30s infinite ;
+ }
+.slider::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.main h1{
+    font-size: 4.2rem;
+    color: white;
+    font-family: 'Rowdies', cursive;
+    margin: 1.5rem;
+    word-spacing: 0.5rem;
+}
+.main h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top:0.5rem ;
+    margin-bottom: 1.5rem;
+    font-family: 'Rowdies', cursive; 
+    color: black;
+}
+
+.main .a{
+    font-size:1.3rem ;
+    margin:1rem 1.5rem ;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(102, 102, 102);
+    padding: 1rem 2rem;
+    letter-spacing: 3px;
+}
+.main .a:hover{
+    background-color:rgb(255, 115, 0) ;
+    color: black;
+}
+.button{
+    margin-top: 2rem;
+}
+ .main .b{
+    font-size:1.3rem ;
+    margin:1rem 1.5rem ;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    background-color:rgb(255, 115, 0) ;
+    padding: 1rem 2rem;
+    letter-spacing: 3px;
+}
+.main .b:hover{
+    background-color: rgb(102, 102, 102);
+    color: white;
+}
+/* end slider  */
+
+/* 123 */
+.contain{
+    width: 100%;
+    height: 8.5rem;
+    background-color:rgb(255, 115, 0) ;
+}
+.contain h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+
+}
+
+.button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button1 a{
+    font-size:1.2rem ;
+    position: relative;
+    top: -1.5rem;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(80, 80, 80);
+    padding: 0.5rem 2.25rem;
+    letter-spacing: 3px;
+    border: 2px solid white;
+}
+.button1 a:hover{
+    background-color: white;
+    color: black;
+    border:2px solid black ;
+}
+
+/* end 123 */
+
+
+/* ERW  */
+.container1{
+    margin-top: 15rem;
+}
+
+.xd1{
+   display: flex;
+   flex-direction: column;
+   justify-content: centers;
+   align-items: center;
+   margin-top: 4.5rem;
+}
+.xd1 h1{
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 2.2rem;
+   font-weight: 350;
+   padding: 1rem;
+   position: relative;
+   margin-bottom: 3rem;
+   word-spacing: 5px;
+}
+.xd1 h1:before{
+   content: "";
+   position: absolute;
+   width: 65%;
+   height: 1px;
+   bottom: 0;
+   left: 15%;
+   border-bottom: 2px solid rgb(255, 115, 0);
+}
+
+.para1 p:nth-child(1){
+   font-size: 1rem;
+   color: rgb(138, 138, 138);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Nanum Myeongjo', serif;
+
+}
+.para1 p:nth-child(2){
+   font-size: 1rem;
+   color: rgb(138, 138, 138);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Nanum Myeongjo', serif;
+   margin-bottom: 1rem;
+}
+
+#rw{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#rw img{
+   height: 40rem;
+   width: 40rem;
+   margin: 2rem 0.65rem;
+}
+
+
+/* END ERW */
+
+/* footer  */
+.footer{
+    width: 100%;
+    background: #00121b;
+   display: block;
+   font-family: sans-serif;
+}
+.inner-footer{
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footer-items {
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.footer-items h1 {
+   padding: 10px 0;
+   font-size: 25px;
+   color:rgb(255, 115, 0);
+   text-transform: uppercase;
+}
+.footer-items p {
+   color: grey;
+   font-size: 16px;
+   text-align: justify;
+   line-height: 25px;
+}
+
+
+.inner-footer h2{
+   margin: 10px 0;
+   color: grey;
+   font-size: 16px;
+   font-weight: lighter;
+   text-transform: uppercase;
+}
+
+.inner-footer ul{
+   list-style: none;
+   color: #fff;
+   font-size: 15px;
+   letter-spacing: 0.5px;
+}
+
+.inner-footer ul a {
+   text-decoration: none;
+   outline: none;
+   color: #fff;
+   transition: 0.3s;
+}
+
+.inner-footer ul a:hover {
+   color: #ff9800;
+}
+
+.inner-footer ul li {
+   margin: 10px 0;
+   height: 25px;
+}
+
+.inner-footer li i {
+   margin-right: 20px;
+}
+
+.social-media {
+   width: 100%;
+   color: #fff;
+   text-align: center;
+}
+
+.social-media a {
+   text-decoration: none;
+}
+
+.social-media i {
+   height: 15px;
+   width: 15px;
+   margin: 20px 5px;
+   padding: 10px;
+   color: #fff;
+   border-radius: 50%;
+   border: 1px solid grey;
+   transition: 0.3s;
+}
+
+.social-media i:hover {
+   background: rgb(255, 115, 0);
+}
+
+.footer-bottom {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem 0;
+   background: rgb(255, 115, 0);
+   color: #fff;
+   font-size: 0.95rem;
+
+}
+/* end footer  */
+
+
+/* keyframes */
+@keyframes slide{
+    0%{
+        background-image: url(nf/1.jpg);
+    }
+
+    20%{
+        background-image: url(nf/1.jpg);
+    }
+
+    20.01%{
+        background-image: url(nf/2.jpg);
+    }
+
+    40%{
+        background-image: url(nf/2.jpg); 
+    }
+
+    40.01%{
+       background-image: url(nf/6.jpg);
+    }
+
+    60%{
+        background-image: url(nf/6.jpg);
+    }
+
+    60.01%{
+       background-image: url(nf/10.jpg);
+    }
+
+    80%{
+        background-image: url(nf/10.jpg); 
+    }
+
+    80.01%{
+       background-image: url(nf/11.jpg);
+    }
+
+    100%{
+        background-image: url(nf/11.jpg);
+    }
+
+}
+
+/* end keyfrmaes */

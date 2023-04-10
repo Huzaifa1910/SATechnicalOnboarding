@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+.main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img > img{
+    height: 280px;
+    width: 280px;
+    border-radius: 8px;
+    position: relative;
+    top: 20px;
+    left: 18px;
+}
+.contentdiv{
+    background-color:  hsl(216, 50%, 16%);
+    height: 550px;
+    width: 320px;
+    border-radius: 10px;
+    display: block;
+}
+.info{
+    position: relative;
+    top: 40px;
+    margin: 0px 18px;
+}
+.NFTname{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+.description, .credi, .time{
+    color: #7388a7;
+    font-weight: 400;
+}
+.time{
+    float: right;
+}
+.madeby > img{
+    width: 30px;
+    height: 30px;
+    border: solid white 2px;
+    border-radius: 100px;
+}
+
+.nam,.credi{
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+.time > img{
+    position: relative;
+    bottom: 2px;
+}
+.price > img{
+    position: relative;
+    bottom: 1px;   
+}
+.price{
+    font-weight: 400;
+    color: #12fefa;
+}
+.nam{
+    font-weight: 400;
+    color: #c0cdde;
+}

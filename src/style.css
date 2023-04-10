@@ -1,47 +1,537 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    margin: 1% 5%;
-    background-color:E6F7FF;
+@font-face {
+    font-family: "Norwester";
+    src: url("./fonts/Norwester.ttf");  
+}
+*{  
+    font-family: "Norwester";
+    padding: auto;
+    list-style: none;
+    
+}
+body{
+    background-color: #e4e6e6;
+}
+.bgclr{
+    background-color: rgb(63, 84, 177);
+}
+.marg{
+    margin-left: 200px;
+}
+.shad{
+    height: 400px !important;
+}
+.shad>div{
+    display: inline;
+}
+.gif1{
+    width: 500px;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 50% 50%;
+.forgif{
+    float: right;
+}
+.gifs{
+    float: right;
+    position: relative;
+    right: 80px;
+    width: 30%;
 }
 
-
-.box {
-    box-shadow: .1em .1em .2em #80D4FF;
-    border-radius: .4em;
-    border-width: .01em;
-    border-style: solid;
-    margin-left: .4em;
-    padding: .0em .5em .1em .5em;
-    margin-bottom: .5em;
-    margin-top: .3em;
+.headpera{
+    float:left;
+    width: 40%;
+    position: relative;
+    left: 60px;
+    top: 30px;
+    font-size: 25px;
+    margin: 20px 0px;
 }
-
-h1 {
-    color: navy;
-    margin: 0em;
+.sp2{
+    margin-top: 30px;
+    color: grey;
+    font-size: 15px;
+    position: relative;
+    left: 100px;
+    font-weight: lighter;
+}
+.perabtns{
+    margin-top: 30px;
     display: block;
+    float: right;
+    color: white;
+}
+.perabtns>button{
+    height:40px;
+    font-size: 20px;
+    width: 150px;    
+    cursor: pointer;
+}
+.btn1{
+    background-color: rgb(107, 120, 182);
+    border: none;
+    border-radius: 5px;
+}
+.btn1:hover,.btn2:hover{
+    color: white;
+    transition: all 0.3s;
+    transform: scale(1.02);
+    box-shadow: 0px 2px 10px #000;
+}
+.btn2{
+    background-color: rgb(62, 84, 184);
+    border: none;
+    border-radius: 5px;
+}
+.headttl{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: rgb(104, 124, 240);
+    margin-bottom: 20px;
+}
+.resimg img{
+    position: relative;
+    bottom: 90px;
+}
+.resimg{
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 200px !important;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 190px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+.resimgmoc{
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 200px !important;
+    overflow: hidden;
+    /* background-image: url("./Comp/head-659652_1280.png"); */
+    background-repeat: no-repeat;
+    background-size: 190px;
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
 
-h2 {
-    color: navy;
-    font-size: 1.2em;
-    margin: 0em;
+.sidedbar{
+    flex: 1;
+    height: 1110px;
+    /* width: 250px; */
+    background-color: rgba(255, 255, 255, 0.308);
+}
+.basecont{
+    width: 80%;
+    height: 1110px;
+    display: flex;
+    margin: auto;
+    /* align-items: flex-start; */
+    justify-content: space-around;
+    /* width: 1000px; */
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.541);
+}
+.sidedhead{
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+.listed{
+    margin-left: 30px;
+}
+.listed>li{
+    list-style: disc;
+}
+.gaped{
+    margin: 10px 0px;
+}
+.sidedbar2{
+    /* flex-basis: 80%; */
+    flex: 2;
+    /* margin: 0%; */
+    background-color: rgba(182, 182, 182, 0.432);
+    height: 1110px;
+    /* width: 700px; */
+}
+.sidedhead2{
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+.anchored{
+    /* text-decoration: underline; */
+    color: purple;
 }
 
-h3 {
-    color: navy;
-    font-size: 1em;
-    margin: 0em;
+
+  .cvinp{
+      background-color: rgba(0, 0, 0, 0);
+  }
+  #idcv{
+      text-align: center;
+      font-size: 40px;
+  }
+  .idgen > *{
+      display: inline;
+      
+  }
+  .copybtn{
+    float: right;
+    margin: 0px 20px 20px 0px;
+    display: none;
+}
+/* .centered{
+        position: relative;
+        left: 12%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+} */
+
+
+.forfont{
+    font-family: "Norwester";
+}
+.modal-body{
+    height: 1200px !important;
+}
+.certificate{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+.character1{
+    position: absolute;
+    width: 50%;
+    left: -145px;
+}
+.character2{
+    position: absolute;
+    width: 25%;
+    right: 10px;
+}
+.character3{
+    position: absolute;
+    width: 20%;
+    right: 140px;
+    margin-top: 100px;
+}
+.Certified{
+    /* background-color: #ccb4ff4d; */
+    background-image: url("./projpge/certified.png");
+    background-repeat: no-repeat;
+    /* width: 100%;
+    height: 2000px; */
+}
+.cardS{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.prodDetail{
+    font-size: 32px;
+}
+.cardQR{
+    position: relative;
+    right: 100px;
+    float: right;
+    bottom: 100px;
 }
 
-ul {
-    margin: 0em 0em .3em 0em;
-    list-style-type: square;
-    padding-left: 1.4em;
-}
+@media only screen and (max-width: 1050px) {
+    .gif1{
+        width: 400px;
+    }
+    .marg{
+        margin-left: 300px;
+    }
+    
+    .gifs{
+        float: right;
+        position: relative;
+        right: 80px;
+        width: 30%;
+    }
+    .perabtns>button{
+        font-size: 20px;
+        height: 35px;
+        width: 135px;
+    }
+    .cardS{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .prodDetail{
+        font-size: 32px;
+    }
+    .cardQR{
+        position: relative;
+        right: 100px;
+        float: right;
+        bottom: 100px;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .gif1{
+        width: 300px;
+    }
+    .marg{
+        margin-left: 300px;
+    }
+    
+    .gifs{
+        float: right;
+        position: relative;
+        right: 80px;
+        width: 30%;
+    }
+    .perabtns>button{
+        font-size: 15px;
+        height: 30px;
+        width: 100px;
+    }
+    .headpera{
+        float:left;
+        width: 40%;
+        position: relative;
+        left: 60px;
+        top: 30px;
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+    .sp2{
+        margin-top: 30px;
+        color: grey;
+        font-size: 12px;
+        position: relative;
+        left: 100px;
+        font-weight: lighter;
+    }
+    .resimg{
+        height: 150px;
+        width: 150px;
+        background-size: 142.75px;
+        top: 22.5px;
+        left: 22.5px;
+    }
+    .sidedhead2{
+        font-size: 20px;
+    }
+    .cardS{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .huzaifa img,.Habib img,.Rabet img{
+        width: 250px;
+    }
+    .prodDetail{
+        font-size: 18px !important;
+    }
+    .cardQR{
+        position: relative;
+        right: 10px !important;
+        float: right;
+        bottom: 90px !important;
+        width: 60px !important;
+    }
+  }
+@media only screen and (max-width: 425px) {
+    .gif1{
+        width: 500px;
+    }
+    .marg{
+        margin-left: 100px;
+    }
+    
+    .inlined{
+        display: inline !important;
+    }
+    .gifs{
+        position: relative;
+        width: 30%;
+    }
+    .perabtns>button{
+        font-size: 20px;
+        height: 40px;
+        width: 150px;
+    }
+    .headpera{
+        width: 90%;
+        position: relative;
+        font-size: 20px;
+        left: 0;
+        margin: 20px 0px;
+    }
+    .sp2{
+        margin-top: 30px;
+        color: grey;
+        font-size: 12px;
+        left: 35px;
+        position: relative;
+        font-weight: lighter;
+    }
+    .resimg{
+        height: 150px;
+        width: 150px;
+        background-size: 142.75px;
+        top: 22.5px;
+        left: 80px;
+    }
+    .sidedhead2{
+        font-size: 20px;
+    }
+    .shad>div{
+        display: block;
+    }
+    .shad{
+        height: 600px !important;
+    }
+    .basecont{
+        width: 80%;
+        height: 2000px !important;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        justify-content: space-around;
+        /* width: 1000px; */
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.541);
+    }
+    
+    .Certified{
+        /* background-color: #ccb4ff4d; */
+        background-image: url("./projpge/certified.png");
+        background-repeat: no-repeat;
+        background-size: 500px;
+        /* width: 100%;
+        height: 2000px; */
+    }
+    .certificate{
+        width: 50%;
+        margin: auto;
+        padding: 10px;
+    }
+    .character1{
+        position: absolute;
+        width: 55%;
+        left: -41px !important;
+    }
+    .character2{
+        position: absolute;
+        width: 25%;
+        right: 10px;
+    }
+    .character3{
+        position: absolute;
+        width: 15%;
+        right: 50px;
+        margin-top: 50px;
+    }
+    .cardS{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .huzaifa,.Habib{
+        display: none !important;
+    }
+    .prodDetail{
+        font-size: 18px !important;
+    }
+    .cardQR{
+        position: relative;
+        right: 10px !important;
+        float: right;
+        bottom: 45px !important;
+        width: 60px !important;
+    }
+  }
+@media only screen and (max-width: 320px) {
+    .gif1{
+        width: 500px;
+    }
+    .marg{
+        margin-left: 100px;
+    }
+    .gifs{
+        position: relative;
+        width: 30%;
+    }
+    .perabtns>button{
+        font-size: 20px;
+        height: 40px;
+        width: 120px;
+    }
+    .headpera{
+        width: 90%;
+        position: relative;
+        font-size: 20px;
+        left: 0;
+        margin: 20px 0px;
+    }
+    .sp2{
+        margin-top: 30px;
+        color: grey;
+        font-size: 12px;
+        left: 35px;
+        position: relative;
+        font-weight: lighter;
+    }
+    .resimg{
+        height: 150px;
+        width: 150px;
+        background-size: 142.75px;
+        top: 22.5px;
+        left: 40px;
+    }
+    .sidedhead2{
+        font-size: 20px;
+    }
+    .shad>div{
+        display: block;
+    }
+    .shad{
+        height: 600px !important;
+    }
+    .basecont{
+        width: 80%;
+        height: 2050px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        justify-content: space-around;
+        /* width: 1000px; */
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.541);
+    }
+    .floated{
+        float: right;
+    }
+    .cardS{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .huzaifa,.Habib{
+        display: none !important;
+    }
+    .prodDetail{
+        font-size: 18px !important;
+    }
+    .cardQR{
+        position: relative;
+        right: 10px !important;
+        float: right;
+        bottom: 45px !important;
+        width: 60px !important;
+    }
+  }
+ 
